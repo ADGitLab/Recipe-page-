@@ -1,0 +1,164 @@
+@import url(Young-Serif;https://fonts.google.com/specimen/Young+Serif);
+@import url(https://fonts.google.com/specimen/Outfit);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Young-Serif", serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-family: "Outfit", serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: "Outfit", serif;
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.3rem;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+hr {
+  border: 1px solid hsl(30, 18%, 87%);
+}
+
+span {
+  font-weight: 600;
+}
+
+.card {
+  width: 38rem;
+  padding: 1.8rem;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.descrip {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.descrip p {
+  line-height: 1.5rem;
+}
+
+.proc-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+}
+
+.proc-time ul {
+  list-style-position: inside;
+  list-style: none;
+}
+
+.proc-time ul li {
+  margin-top: 0.8rem;
+}
+
+.proc-time ul li::before {
+  content: "\2022";
+  color: hsl(332, 51%, 32%);
+  margin-right: 1rem;
+}
+
+.ingredient,
+.instruction,
+.nutrition {
+  margin-top: 1.6rem;
+}
+
+.ingredient ul {
+  list-style-position: inside;
+  list-style: none;
+  margin: 1.6rem 0;
+}
+
+.ingredient ul li {
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+}
+
+.ingredient ul li::marker {
+  content: "\2022";
+  color: hsl(14, 45%, 36%);
+}
+
+.instruction ol {
+  margin: 1.6rem 0;
+  margin-left: 1rem;
+}
+
+.instruction ol li {
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+}
+
+.instruction ol li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition > p {
+  margin: 0.8rem 0;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table div p {
+  margin: 1rem 0;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0;
+  }
+
+  img {
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .card {
+    border-radius: 0;
+    padding: 0 1.8rem;
+    height: 1750px;
+  }
+
+  .descrip,
+  .ingredient,
+  .instruction,
+  .nutrition,
+  .hr {
+    position: relative;
+    top: 10.5rem;
+  }
+}
